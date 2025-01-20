@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Author: Nishthaben Vipulkumar Chaudhari, 000930353 -->
+        <title>Travel Reviews</title>
+        <link href="travelstyles.css" rel="stylesheet">
+        <link href="mobile.css" rel="stylesheet">
+        <link href="printstyles.css" rel="stylesheet">
+
+        <style> 
+            main 
+            {
+                height: 57rem;
+                border: solid 2.6px black;
+                margin-top: 0.1em;
+                margin-left: 7%;
+                margin-right: 7%;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 8px;
+            }  
+            .b1
+            {
+                margin-top: 1rem;
+                border: solid 2.2px black;
+            }
+            .givecolor 
+            {
+                background-color: #B6D4CE;
+                margin-left: 6px;
+            }
+            legend
+            {
+                margin-left: 6px;
+            }
+            .country
+            {
+                margin-left: 6px;
+                margin-top: 3px;
+                border-radius: 5px 5px 5px 5px;
+            }
+            #day
+            {
+                border-radius: 5px 5px 5px 5px;
+                margin-bottom: 10px;
+            }
+            .labels, .stars, .textarea, .checkbox, .details
+            {
+                margin-left: 6px;
+            }
+            #comments
+            {
+                margin-bottom: 15px;
+            }
+            #specification, #email
+            {
+                margin-bottom: 10px;
+            }
+            #trip
+            {
+                margin-left: 6px;
+            }
+            #sent {
+                margin-top: 1rem;
+                font-weight: bolder;
+            }
+            </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Travel Seminars</h1>
+            <h1>2023/2024</h1>
+        </header>
+
+        <nav>
+            <ul class="navlist">
+                <li><a href="#" title="About Us">About Us</a></li>
+                <li><a href="#" title="Countries">Countries</a></li>
+                <li><a href="seminars.html" title="Seminars">Seminars</a></li>
+                <li><a href="#" title="Photos">Photos</a></li>
+                <li><a href="reviews.html" title="Travel">Travel</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="r1">
+            <form action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="post" name="example">
+            
+
+                <fieldset class="b1">
+                    <legend>Trip Reviews</legend>
+                    <label for="countries"></label>
+                    <select name="trip" class="country">
+                        <option value="North America">North America</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Asia">Asia</option>
+                        <option value="South America">South America</option>
+                    </select>
+    
+    
+                    <label for="day"></label>
+                    <select name="Duration" id="day">
+                        <option value="7">7 Days</option>
+                        <option value="10">10 Days</option>
+                        <option value="14">14 Days</option>
+                        <option value="21">21 Days</option>
+                    </select><br>
+    
+                    <label for="ratings" class="labels">Your Ratings:</label><br>
+                    <input type="radio" id="5s" class="stars" name="Rating" value="5" checked>
+                    <label for="fivestar"><img src="images/5star.png" alt="fivestar"></label><br>
+    
+                    <input type="radio" id="4s" class="stars" name="Rating" value="4">
+                    <label for="fourstar"><img src="images/4star.png" alt="fourstar"></label><br>
+    
+                    <input type="radio" id="3s" class="stars" name="Rating" value="3">
+                    <label for="threestar"><img src="images/3star.png" alt="threestar"></label><br>
+    
+                    <input type="radio" id="2s" class="stars" name="Rating" value="2">
+                    <label for="twostar"><img src="images/2star.png" alt="2star"></label><br>
+    
+                    <input type="radio" id="1s" class="stars" name="Rating" value="1">
+                    <label for="onestar"><img src="images/1star.png" alt="1star"></label><br>
+
+                    <label for="comments" class="labels">Comments</label><br class="br">
+                    <textarea name="comments" id="comments" class="textarea" rows="7" cols="65"></textarea>
+                </fieldset>
+
+
+                <fieldset class="b1">
+                    <legend>I would be interested trips to this areas: (chech all that apply)</legend>
+                    
+                    <input type="checkbox" id="africa" class="checkbox" name="interested" value="africa">
+                    <label for="fivecountries">Africa</label><br>
+    
+                    <input type="checkbox" id="Asia" class="checkbox" name="interested" value="Asia">
+                    <label for="fivecountries">Asia</label><br>
+    
+                    <input type="checkbox" id="northamerica" class="checkbox" name="interested" value="northamerica">
+                    <label for="fivecountries">North America</label><br>
+    
+                    <input type="checkbox" id="sorthamerica" class="checkbox" name="interested" value="sorthamerica" checked>
+                    <label for="fivecountries">Sorth America</label><br>
+    
+                    <input type="checkbox" id="Other" class="checkbox" name="interested" value="Other">
+                    <label for="fivecountries">Other (please specify)</label>
+    
+                    <input type="text" name="specify" id="specification">
+                </fieldset>
+    
+                <fieldset class="b1">
+                    <legend>About You (optional)</legend>
+                    <label for="trips" id="trip">I usually prefer these types of trips (select all that appy):</label><br class="br">
+    
+                    <select name="preffered" id="trip" size="4">
+                        <option value="cuise">Cruise</option>
+                        <option value="cultural">Cultural/Historic</option>
+                        <option value="cycling">Cycling</option>
+                        <option value="hiking">Hiking</option>
+                    </select><br>
+                 
+    
+                    <label for="fnm" class="details">First Name</label><br class="br">
+                    <input type="text" class="givecolor" id="name" name="firstname" maxlength="20" oninput="updateFormName()"><br class="br">
+    
+                    <label for="lnm" class="details">Last Name</label><br class="br">
+                    <input type="text" class="givecolor" name="lastname" maxlength="20"><br class="br">
+    
+                    <label for="phno" class="details">Phone Number</label><br class="br">
+                    <input type="text" class="givecolor" maxlength="12" size="10" name="Phone" placeholder="123-456-7890" ><br class="br">
+    
+                    <label for="eadd" class="details">Email Address</label><br class="br">
+                    <input type="text" class="givecolor" id="email" maxlength="40" size="30" name="Emailaddress" placeholder="name@example.com">
+    
+                </fieldset>
+    
+                <input type="submit" class="givecolor" id="sent" value="SEND FEEDBACK">
+                <input type="reset" class="givecolor" id="sent" value="CANCEL">
+                <input type="hidden" id="formname" name="formname" value="Name Travel Feedback">
+    
+            </form>
+        </main>
+
+        <footer>
+            <img src="images/outdooradventurehorizontal.png" alt="outdooradventurehorizontal">
+        </footer>
+
+    </body>
+</html>

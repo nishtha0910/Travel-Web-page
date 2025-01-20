@@ -1,0 +1,80 @@
+
+@media print 
+/*Nishthaben Vipulkumar Chaudhari, 000930353*/
+{
+    header
+    {
+        all: unset;
+        text-align: center;
+        font-size: 10px;
+    }
+    .br 
+    {
+        display: none;
+    }
+    .seminars
+    {
+        caption-side: top;
+        text-align: left;
+    }
+    nav 
+    {
+        display: none;
+    }
+    .sub
+    {
+        all: unset;
+    }
+    .sub tbody tr
+    {
+        border: none;
+        border-spacing: 0; 
+        border-collapse: collapse; 
+        column-gap: 0;
+    }
+    .head 
+    {
+        border: none;
+    }
+    .sub, th, td, .sub thead tr, .sub thead tr th, .sub tbody tr th, .sub tbody tr td
+    {
+        border: none;
+        white-space: nowrap;;
+        padding: 0;
+
+    }
+    footer 
+    {
+        display: none;
+    }
+    .r1
+    {
+        all: unset;
+    }
+    .seminars
+    {
+        all: unset;
+    }
+    .b1
+    {
+        border: 1px solid black;
+    }
+    legend
+    {
+        margin-left: 0;
+    }
+    .label
+    {
+        all: unset;
+    }
+    .country
+    {
+        margin-left: 0px;
+        margin-top: 0;
+        border-radius: 1px 1px 1px 1px;
+    }
+    .stars
+    {
+        margin-left: 10px;
+    }
+}

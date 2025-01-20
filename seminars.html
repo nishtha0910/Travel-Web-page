@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- author: Nishthaben vipulkumar chaudhari, 000930353 -->
+        <title>Travel Seminars</title>
+        <link href="travelstyles.css" rel="stylesheet">
+        <link href="mobile.css" rel="stylesheet">
+        <link href="printstyles.css" rel="stylesheet">
+
+        <style>
+            .table
+            {
+                border: none ;
+                border-color: white;
+                border-collapse: none;
+                padding: 0px;
+                margin-bottom: 1em;
+                margin-top: 1em;
+            }
+            .table tr td
+            {
+                border: none;
+            }
+            #code
+            {
+                text-align: left;
+            }
+            .na
+            {
+                background-color: #B6D4CE;
+                border: none ;
+                width: 1px;
+            }
+            .sa
+            {
+                background-color: #5993C7;
+                border: none ;
+                width: 1px;
+            }
+            .a2
+            {
+                background-color: #A19372;
+                border: none ;
+                width: 1px;
+            }
+            .a1
+            {
+                background-color: #F4AF60;
+                border: none ;
+                width: 1px;
+            }
+            .d1
+            {
+                padding: 20px 30px 20px 30px;
+            }
+            .t2
+            {
+                padding: 20px 30px 20px 30px;
+            }
+            .sub
+            {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .sub, th, td
+            {
+                border: 1px solid black ;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            .sub thead
+            {
+                background-color: #72B57D;
+                color: white;
+            }
+            .sub thead tr
+            {
+                height: 30px;
+            }
+            .sub tbody tr
+            {
+                height: 40px;
+            }
+            .sub tbody tr th
+            {
+                background-color: #72B57D;
+                color: black;
+                padding: 15px 30px 15px 30px;
+            }
+            .na1
+            {
+                background-color: #B6D4CE;
+            }
+            .sa1
+            {
+                background-color: #5593C7;
+            }
+            .asia 
+            {
+                background-color: #A19372;
+            }
+            .africa
+            {
+                background-color: #F4AF60;
+            }
+            .seminar
+            {
+                background-image: url(images/dust.jpg);
+                text-align: center;
+            }
+            .subject
+            {
+                caption-side: bottom;
+                text-align: right;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Travel Seminars</h1>
+            <h1>2023/2024</h1>
+        </header>
+
+        <nav>
+            <ul class="navlist">
+                <li><a href="#" title="About Us">About Us</a></li>
+                <li><a href="#" title="Countries">Countries</a></li>
+                <li><a href="seminars.html" title="Seminars">Seminars</a></li>
+                <li><a href="#" title="Photos">Photos</a></li>
+                <li><a href="reviews.html" title="Travel">Travel</a></li>
+            </ul>
+        </nav>
+
+    <main class="seminars">
+        <table class="table">
+            <caption id="code">Legend:</caption>
+            <tr>    
+                <td class="na"></td>
+                <td>North America</td>
+                                            
+                <td class="sa"></td>
+                <td>South America</td>
+                                            
+                <td class="a2"></td>
+                <td>Asia</td>
+                                            
+                <td class="a1"></td>
+                <td>Africa</td>
+            </tr>
+        </table>
+
+        <table class="sub">
+            <caption class="subject">Schedule is subject to change</caption>
+            <thead>
+                <tr class="head">
+                    <th class="d1">Day</th>
+                    <th class="t2">7 am - 9 am</th>
+                    <th class="t2">9 am - 11 am</th>
+                    <th class="t2">11 am - 12 am</th>
+                    <th class="t2">12 am - 2 am</th>
+                    <th class="t2">2 am - 4 am</th>
+                    <th class="t2">6 am - 8 am</th>
+                    <th class="t2">8 am - 10 am</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                
+                <tr>
+                    <th>Monday</th>
+                    <td class="na1">North America</td>
+                    <td class="asia">Asia</td>
+                    <td colspan="4" class="africa">Africa</td>
+                    <td rowspan="2" class="na1">North America</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td rowspan="4" class="africa">Africa</td>
+                    <td colspan="2" class="na1">North America</td>
+                    <td></td>
+                    <td colspan="2" class="asia">Asia</td>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td rowspan="2" colspan="3" class="asia">Asia</td>
+                    <td class="na">North America</td>
+                    <td rowspan="2" colspan="2" class="sa1">South America</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td colspan="5" class="sa1">South America</td>
+                    <td class="noseminar">No Seminars</td>
+                </tr>
+                <tr>
+                    <th>Saturday</th>
+                    <td rowspan="2" class="sa1">South America</td>
+                    <td></td>
+                    <td class="na1">North America</td>
+                    <td rowspan="2" class="africa">Africa</td>
+                    <td rowspan="2" class="sa1">South America</td>
+                    <td rowspan="2" colspan="2" class="asia">Asia</td>
+                </tr>
+                <tr>
+                    <th>Sunday</th>
+                    <td class="africa">Africa</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Holidays</th>
+                    <td colspan="7" class="noseminar">No seminars</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="images/outdooradventurehorizontal.png" alt="outdooradventurehorizontal">
+    </footer>
+
+    </body>
+</html>
